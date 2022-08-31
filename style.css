@@ -159,6 +159,9 @@ h2 {
 
 /* Responsiveness */
 @media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+    }
     .box-one {
         border-radius: 0.6rem 0.6rem 0 0;
         width: 21.5rem;

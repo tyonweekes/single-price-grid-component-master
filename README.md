@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Single Price Grid Component Solution](https://moonlit-youtiao-ec4f58.netlify.app)
 
 ## My process
 
