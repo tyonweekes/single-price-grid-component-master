@@ -34,12 +34,18 @@ h2 {
 }
 
 .main-container {
-    /* width: 43rem; */
-    /* min-height: 100vh; */
+    min-height: 100vh;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 6rem;
+    max-width: 43rem;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.09);
 }
 
 /* Box 1 */
@@ -58,9 +64,10 @@ h2 {
 
 .box-one {
     background-color: white;
-    padding: 40px;
+    padding: 3rem;
     border-radius: 0.6rem 0.6rem 0 0;
     width: 43rem;
+    height: 15rem;
 }
 
 /* Box 2 */
@@ -72,7 +79,7 @@ h2 {
 .box-two button {
     background-color: var(--bright-yellow);
     font-family: 'Karla', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1rem;
     color: white;
     padding: 1rem 5.5rem 1rem 5.5rem;
@@ -109,9 +116,10 @@ h2 {
 
 .box-two {
     background-color: var(--cyan);
-    padding: 40px;
+    padding: 3rem;
     border-radius: 0 0 0 0.6rem;
     width: 21.5rem;
+    height: 20rem;
 }
 
 /* Box 3 */
@@ -129,9 +137,10 @@ h2 {
 
 .box-three {
     background-color: var(--light-cyan);
-    padding: 40px;
+    padding: 3rem;
     border-radius: 0 0 0.6rem 0;
     width: 21.5rem;
+    height: 20rem;
 }
 
 /* Attribution */
@@ -141,8 +150,26 @@ h2 {
     font-size: 0.7rem;
     text-align: center;
     color: var(--grayish-blue);
+    margin-top: 1rem;
 }
 
 .attribution a {
     color: var(--cyan);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+    .box-one {
+        border-radius: 0.6rem 0.6rem 0 0;
+        width: 21.5rem;
+        height: auto;
+    }
+
+    .box-two {
+        border-radius: 0 0 0 0;
+    }
+
+    .box-three {
+        border-radius: 0 0 0.6rem 0.6rem;
+    }
 }
